@@ -1,5 +1,12 @@
-<section class="grid">
+<section>
+        <p-tabView>
+                <p-tabPanel header="Browse by category">
 
-        <app-category *ngFor="let category of categories" [category]="category" class="md:col-4 sm:col-6 align-items-center justify-content-center"></app-category>
+                </p-tabPanel>
+                <p-tabPanel header="Browse all">
+                      <app-browse-all></app-browse-all>  
+                </p-tabPanel>
+        </p-tabView>
+        
 
 </section>

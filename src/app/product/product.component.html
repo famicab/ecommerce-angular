@@ -8,8 +8,14 @@
            {{product.description}}
         </p>
         <ng-template pTemplate="footer">
-            <span class="font-bold text-900">{{ '$' + product.price }}</span>
-            <p-button label="Add to cart" [outlined]="true"></p-button>
+            <div class="grid flex align-content-center flex-wrap">
+                <div class="col-6 flex justify-content-center align-items-center">
+                    <span class=" font-bold text-900">{{ '$' + product.price }}</span>
+                </div>
+                <div class="col-6">
+                    <p-button label="Add to cart" [outlined]="true"></p-button>
+                </div>
+            </div>
         </ng-template>
     </p-card>
 </div>
